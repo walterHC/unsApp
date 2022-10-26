@@ -38,12 +38,10 @@ public class Activity_PostulanteInfo extends AppCompatActivity {
 
     public Postulante buscarPorDNI(String DNI, ArrayList<Postulante> Post){
         for (int i=0; i<Post.size(); i++) {
-            if (Post.get(i).dni.equals(DNI)) {
+            if (Post.get(i).dni.equals(DNI))
                 return Post.get(i);
-            }else{
-                Toast.makeText(getApplicationContext(),"Postulante No encontrado" , Toast.LENGTH_SHORT).show();
             }
-        }
-        return null;
+        Postulante obj=new Postulante(null, null, null, null, null, null, null);
+        return obj;
     }
 }
